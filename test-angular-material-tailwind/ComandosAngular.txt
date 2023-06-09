@@ -1,0 +1,10 @@
+Comando para generar un componente
+    - ng g c "nombrecomponenete"     // Crea una carpeta con los archivos del componente
+        - ng g c "nombrecomponente" --module:'nombre-modulo' // Crea el componente y se añade automaticamente dentro del modulo especificado
+        
+Comando para generar un modulo
+    - ng g m "nombre del modulo"    // si la carpeta existe, generar el archivo dentro de ella
+
+Comando para generar Rutas
+    - ng generate module "nombre-de-modulo-rutas"-routing  --module="nombre-modulo-asociado" 
+        // nombre modulo asociado se refiere a el modulo que manejará los componenetes utilizados dentro de las rutas.

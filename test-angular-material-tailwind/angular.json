@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "copia-optim": {
+    "test-angular-material-tailwind": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -11,17 +11,14 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/copia-optim",
+            "outputPath": "dist/test-angular-material-tailwind",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "customWebpackConfig": {
-              "path": "webpack.config.js"
-            },
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -31,10 +28,7 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": [],
-            "allowedCommonJsDependencies": [
-              "lodash"
-           ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -64,23 +58,21 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "copia-optim:build:production"
+              "browserTarget": "test-angular-material-tailwind:build:production"
             },
             "development": {
-              "browserTarget": "copia-optim:build:development"
+              "browserTarget": "test-angular-material-tailwind:build:development"
             }
           },
-          "defaultConfiguration": "development",
-          "options": {
-          }
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "copia-optim:build"
+            "browserTarget": "test-angular-material-tailwind:build"
           }
         },
         "test": {

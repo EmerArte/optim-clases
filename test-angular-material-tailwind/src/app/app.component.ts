@@ -6,14 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'copia-optim';
-  cont = {
-    name : "",
-    saludo : "",
-  };
-
-  contadorDeClicks(){
-    this.cont.name = "Optim";
-    this.cont.saludo = "Hola a todos";
-  }
+  title = 'test-angular-material-tailwind';
 }

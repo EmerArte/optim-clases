@@ -1,0 +1,17 @@
+<div *ngFor="let pepito of PRODUCTOS">
+
+    <mat-card class="example-card" >
+        <mat-card-header>
+          <mat-card-title>{{ pepito.name }}</mat-card-title>
+          <mat-card-subtitle>{{ pepito.price }} </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ pepito.desc }}</p>
+          <p></p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button [routerLink]="['detalles', pepito.id]" >detalles</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    

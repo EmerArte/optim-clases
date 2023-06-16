@@ -1,0 +1,12 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{productoSeleccionado.name}}</mat-card-title>
+      <mat-card-subtitle>{{productoSeleccionado.price}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="productoSeleccionado.image" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        {{ productoSeleccionado.desc }}
+      </p>
+    </mat-card-content>
+  </mat-card>
